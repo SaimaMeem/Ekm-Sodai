@@ -19,11 +19,22 @@
     <script src="https://kit.fontawesome.com/c598047e8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        @media screen and (max-width: 572px) {
+        /* @media screen and (max-width: 572px) {
             #myInput {
                 width: 103% !important;
                 margin-bottom: 1rem;
             }
+        } */
+        
+        .sidebar .nav-item .nav-link[data-toggle=collapse]:after {
+            width: 1rem;
+            text-align: center;
+            float: right;
+            vertical-align: 0;
+            border: 0;
+            font-weight: 900;
+            content: "\f107";
+            font-family: Font Awesome\ 5 Free;
         }
         
         #collapseA:after {
@@ -32,6 +43,11 @@
             top: 50%;
             right: 20px;
             transform: translateY(-50%);
+        }
+        
+        accordionSidebar {
+            padding-right: 0 !important;
+            margin-right: 0 !important;
         }
         
         #accordionSidebar a:hover {
@@ -54,7 +70,7 @@
                     <div class="sidebar-brand-text mx-3"><span>Ek Mutho <br> Sodai</span></div>
                 </a>
                 <hr class="sidebar-divider my-2">
-                <ul class="nav navbar-nav" id="accordionSidebar" style="margin-right: 0 !important;">
+                <ul class="nav navbar-nav" id="accordionSidebar" style="margin-right: 0 !important; padding-right: 0rem !important;">
                     <li class="nav-item"><a class="nav-link" href="/Admin.html"><i
                                 class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;<span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
@@ -66,7 +82,7 @@
                                 class="fas fa-store"></i>&nbsp;&nbsp;<span>Store</span>
                         </a>
                         <div class="collapse" id="collapseList" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;">
-                            <ul class="nav navbar-nav text-light" style=" padding: 0rem!important;">
+                            <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link" href="storeDetails.html"> <i class="fa fa-list-alt"></i>&nbsp;&nbsp;<span>Store Details</span></a>
                                 </li>
