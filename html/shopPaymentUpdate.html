@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Shop Payment Details</title>
+    <title>Shop Payment Update</title>
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=a9a31ec932de3114d9b1ed27688edc60">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -67,7 +67,7 @@
             <div class="container-fluid d-flex flex-column p-0" style="margin-top: 0rem!important;">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/Admin.html">
                     <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 my-3"
-                                src="/assets/img/logo.jpg" height="50" alt="CoolBrand"></i></div>
+                                src="/assets/img/logo.jpg" height="50" alt="Ek Mutho Sodai"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Ek Mutho <br> Sodai</span></div>
                 </a>
                 <hr class="sidebar-divider my-2">
@@ -154,7 +154,7 @@
 
                 <!-- diff  -->
                 <div class="container-fluid responsive">
-                    <h3 class="responsive font-weight-bold mb-1 pl-0" style="color: rgb(0, 0, 0) !important;">Shop Payment Details
+                    <h3 class="responsive font-weight-bold mb-1 pl-0" style="color: rgb(0, 0, 0) !important;">Shop Payment Update
                     </h3>
                     <!-- <div class="d-sm-flex justify-content-between align-items-center mb-4 mt-4">
                         <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4" style="padding-left: 0rem;">
@@ -170,94 +170,68 @@
                         </div>
                     </div> -->
                     <div class="row mt-4">
-                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                            <div class="card text-center p-3" id="storeTable" style="overflow-x: auto !important;">
-                                <table class="table cell-border table-bordered table-striped mt-3" id="myTable" style="color: black;">
-                                    <thead class="">
-                                        <tr class="">
-                                            <th scope="col" width="20%">Shop Name</th>
-                                            <th scope="col" width="15%">Amount (Bdt)</th>
-                                            <th scope="col" width="15%">Pay Through </th>
-                                            <th scope="col" width="15%">Pay For</th>
-                                            <th scope="col" width="15%">Status</th>
-                                            <th scope="col" width="20%">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="">
-                                            <td>Abdullah Brothers</td>
-                                            <td>2000/-</td>
-                                            <td>BKash</td>
-                                            <td>Jani na</td>
-                                            <td>Pending</td>
-                                            <td>
-                                                <!-- <button type="button" class="btn btn-dark btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0; width:4rem;">View</button> -->
-                                                <a type="button" class="btn btn-dark btn-sm" onclick="" href="storeDetails.html" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">Edit</a>
+                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12" style="color: black;">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <form action="" id="storeForm" method="post">
+                                        <div class="form-row my-3">
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Shop Name</label>
+                                                <input type="text" id="National" class="form-control" required>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Amount</label>
+                                                <input type="text" id="Area" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row my-3">
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Pay Through</label>
+                                                <input type="text" id="Territory" class="form-control" required>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Pay For</label>
+                                                <input type="text" id="Dealer" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row my-3">
+                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Status</label>
+                                                <input type="text" id="Beat" class="form-control" required>
+                                            </div>
+                                            <!-- <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                                                <label for="">Market</label>
+                                                <input type="text" id="Market" class="form-control" required>
+                                            </div> -->
+                                        </div>
+                                        <div class="col center1 mt-3" style="display: flex; justify-content: center;">
+                                            <button class="btn btn-primary" type="button" name="submit" style="border-radius: 0.2rem; background-color: black;">Add</button>
+                                        </div>
+                                    </form>
 
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td>Minhaz Brothers</td>
-                                            <td>2000/-</td>
-                                            <td>BKash</td>
-                                            <td>Jani na</td>
-                                            <td>Pending</td>
-                                            <td>
-                                                <button type="button" class="btn btn-dark btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">Edit</button>
-                                            </td>
-                                        </tr>
-                                        <tr class="">
-                                            <td>Hello Brothers</td>
-                                            <td>2000/-</td>
-                                            <td>BKash</td>
-                                            <td>Jani na</td>
-                                            <td>Pending</td>
-                                            <td>
-                                                <button type="button" class="btn btn-dark btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black !important;">Edit</button>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- <div id="printbar"></div> -->
-
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div><a class="border rounded d-inline scroll-to-top " href="#page-top "><i class="fas fa-angle-up "></i></a>
     </div>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js "></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
-    <script>
-        $(document).ready(function() {
-            var table = $('#myTable').DataTable({
-                // dom: 'Blfrtip',
-                // buttons: [
-                //     // {
-                //     //     text: '<i class="fa fa-print"></i> &nbsp; Print'
-                //     // }
-
-                // ]
-            });
-            // table.buttons().container().appendTo($('#printbar'));
-
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js "></script>
+    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js " integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin=" anonymous "></script>
+    <script type="text/javascript " charset="utf8 " src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js "></script>
 </body>
 
 </html>
