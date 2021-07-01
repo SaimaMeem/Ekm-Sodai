@@ -58,6 +58,11 @@
         #accordionSidebar a {
             color: #ffffffcc !important;
         }
+        
+        #accordionSidebar a.active {
+            /* background-color: #ccc; */
+            color: white !important;
+        }
     </style>
 </head>
 
@@ -66,28 +71,28 @@
         <nav class="navbar navbar-dark align-items-start sidebar accordion p-0" id="sidebar" style="background-color: black; transition: 0.5s;">
             <div class="container-fluid d-flex flex-column p-0" style="margin-top: 0rem!important;">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/Admin.html">
-                    <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 my-3"
-                                src="/assets/img/logo.jpg" height="50" alt="CoolBrand"></i></div>
+                    <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 mt-2"
+                                src="/assets/img/logo.jpg" height="50" alt="Ek Mutho Sodai"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Ek Mutho <br> Sodai</span></div>
                 </a>
                 <hr class="sidebar-divider my-2">
                 <ul class="nav navbar-nav" id="accordionSidebar" style="margin-right: 0 !important; padding-right: 0rem !important;">
                     <li class="nav-item"><a class="nav-link" href="/Products.html"><i class="fas fa-box-open"></i>&nbsp;
                             &nbsp;<span>Products</span></a></li>
-                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
-                        <a class="nav-link collapsed" id="collapseA" data-toggle="collapse" href="#collapseList1" role="button" aria-expanded="false" aria-controls="collapseList1"><i
+                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important; ">
+                        <a class="nav-link collapsed active" id="collapseA" data-toggle="collapse" href="#collapseList1" role="button" aria-expanded="false" aria-controls="collapseList1"><i
                                 class="fas fa-store"></i>&nbsp;&nbsp;<span>Shop</span>
                         </a>
-                        <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;">
+                        <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
                             <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
-                                    <a class="nav-link" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
+                                    <a class="nav-link link2" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
                                 </li>
-                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link link2 active" href="storeAllocationDetails.html"><i
                                             class="fas fa-credit-card"></i>&nbsp;&nbsp;<span>
                                             Payment
                                         </span></a> </li>
-                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                <li class="nav-item link2" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
                                             class="fas fa-box-open"></i>&nbsp;&nbsp;<span>Product Insertion
                                         </span></a> </li>
                             </ul>
@@ -99,7 +104,7 @@
                         <a class="nav-link collapsed" id="collapseB" data-toggle="collapse" href="#collapseList2" role="button" aria-expanded="false" aria-controls="collapseList2"><i
                                 class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span>Location</span>
                         </a>
-                        <div class="collapse" id="collapseList2" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;">
+                        <div class="collapse" id="collapseList2" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
                             <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link" href="storeDetails.html"> <i class="fa fa-sitemap"></i>&nbsp;&nbsp;<span>Set Hierarchy</span></a>
