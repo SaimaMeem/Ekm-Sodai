@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>New Shop Entry</title>
+    <title>Location Category - Thana</title>
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=a9a31ec932de3114d9b1ed27688edc60">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -19,12 +19,15 @@
     <script src="https://kit.fontawesome.com/c598047e8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        /* @media screen and (max-width: 572px) {
-            #myInput {
-                width: 103% !important;
-                margin-bottom: 1rem;
+        @media screen and (min-width: 572px) {
+            #collapseC:after {
+                right: 37px !important;
             }
-        } */
+            .sidebar.toggled .nav-item .nav-link#collapseC:after {
+                top: 40% !important;
+                right: 20px !important;
+            }
+        }
         
         .sidebar .nav-item .nav-link[data-toggle=collapse]:after {
             width: 1rem;
@@ -37,8 +40,7 @@
             font-family: Font Awesome\ 5 Free;
         }
         
-        #collapseA:after,
-        #collapseB:after {
+        #collapseA:after {
             display: block;
             position: absolute;
             top: 50%;
@@ -46,10 +48,19 @@
             transform: translateY(-50%);
         }
         
-        accordionSidebar {
+        #collapseC:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        /*         
+        #accordionSidebar {
             padding-right: 0 !important;
             margin-right: 0 !important;
         }
+         */
         
         #accordionSidebar a:hover {
             color: #ED2124 !important;
@@ -60,7 +71,7 @@
         }
         
         #accordionSidebar a.active {
-            /* background-color: #ccc; */
+            /* background-color: #ED2124; */
             color: white !important;
         }
     </style>
@@ -83,7 +94,7 @@
                         <a class="nav-link collapsed" id="collapseA" data-toggle="collapse" href="#collapseList1" role="button" aria-expanded="false" aria-controls="collapseList1"><i
                                 class="fas fa-store"></i>&nbsp;&nbsp;<span>Shop</span>
                         </a>
-                        <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;">
+                        <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;  transition: 0.5s;">
                             <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
@@ -101,17 +112,37 @@
                     <li class="nav-item"><a class="nav-link" href="/Admin.html"><i
                                 class="far fa-list-alt"></i>&nbsp;&nbsp;<span>Order</span></a></li>
                     <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
-                        <a class="nav-link collapsed" id="collapseB" data-toggle="collapse" href="#collapseList2" role="button" aria-expanded="false" aria-controls="collapseList2"><i
+                        <a class="nav-link collapsed active" id="collapseA" data-toggle="collapse" href="#collapseList2" role="button" aria-expanded="false" aria-controls="collapseList2"><i
                                 class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span>Location</span>
                         </a>
-                        <div class="collapse" id="collapseList2" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;">
+                        <div class="collapse" id="collapseList2" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
                             <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link" href="storeDetails.html"> <i class="fa fa-sitemap"></i>&nbsp;&nbsp;<span>Set Hierarchy</span></a>
                                 </li>
-                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
-                                            class="fa fa-list-alt"></i>&nbsp;&nbsp;<span>Hierarchy
-                                            Details</span></a> </li>
+                                <li class="nav-item" style=" list-style: none;">
+                                    <a class="nav-link collapsed active" id="collapseC" data-toggle="collapse" href="#collapseList3" role="button" aria-expanded="false" aria-controls="collapseList3"><i
+                                            class="fas fa-list-alt"></i>&nbsp;&nbsp;<span>Categories</span>
+                                    </a>
+                                    <div class="collapse" id="collapseList3" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
+                                        <ul class="nav navbar-nav" style=" padding: 0rem!important;">
+                                            <li class="nav-item" style=" list-style: none;">
+                                                <a class="nav-link" href="storeDetails.html"> <i class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;<span>Division</span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                                        class="fas fa-city"></i>&nbsp;&nbsp;<span>District
+                                                    </span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;">
+                                                <a class="nav-link active" href="storeDetails.html"> <i class="fas fa-building"></i>&nbsp;&nbsp;<span>Thana</span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                                        class="fas fa-road"></i>&nbsp;&nbsp;<span>Zip Code
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -160,7 +191,7 @@
                 <!-- diff  -->
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text font-weight-bold mb-0" style="color: black;">New Shop Entry</h3>
+                        <h3 class="text font-weight-bold mb-0" style="color: black;">Location Category - Thana</h3>
                     </div>
 
                     <div class="row text-dark">
@@ -170,104 +201,18 @@
                                     <form action="">
                                         <div class="form-row">
                                             <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Shop Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
                                                 <label>Thana Code</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Zip Code</label>
+                                                <label>Thana Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
+                                                <label>District Code</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="form-row my-3">
-
-                                            <!-- <div class="col-lg-1 col-xl-1"></div> -->
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Location Code</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Email Address</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Website Address</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Contact Person (1)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Phone Number (1)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- <div class="col-lg-1 col-xl-1"></div> -->
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Address (1)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Contact Person (2)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Phone Number (2)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <!-- <div class="col-lg-1 col-xl-1"></div> -->
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Address (2)</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Trade LIC Number</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Vat Registration Number</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4"></div>
-                                        </div>
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label class="form-label" for="tradeImage">Trade LIC Image </label>
-                                                <br>
-                                                <input type="file" id="tradeImage">
-                                            </div>
-
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label class="form-label" for="vatImages">Vat Registration Image
-                                                </label>
-                                                <br>
-                                                <input type="file" id="vatImage">
-                                            </div>
-                                            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label class="form-label" for="dbPointImage">DB Point Image</label>
-                                                <br>
-                                                <input type="file" id="dbPointImage">
-                                            </div>
-                                        </div>
-
-                                        <!-- <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12"
-                                                style="margin-top: 2.5rem;">
-                                                <label class="" for="disStatus" style="margin-right: 0.5rem;">District
-                                                    Status:</label>
-                                                <input type="radio" id="disStatus" value="disStatus" class="radio"
-                                                    style="transform:scale(1.5);">
-                                            </div> -->
                                 </div>
                                 <div class="col center1 mt-3" style="display: flex; justify-content: center;">
                                     <button class="btn btn-primary" type="button" name="submit" style="border-radius: 0.3rem; margin-bottom: 1rem; background-color: black;">Add</button>
@@ -286,21 +231,17 @@
                                 <table class="table table-bordered table-striped table-hover" id="myTable" style="color: black;">
                                     <thead class="thead">
                                         <tr>
-                                            <th scope="col" width="17%">Shop Name</th>
-                                            <th scope="col" width="17%">Thana Code</th>
-                                            <th scope="col" width="17%">Zip Code</th>
-                                            <th scope="col" width="16%">Trade LIC Number</th>
-                                            <th scope="col" width="16%">Vat Registration Number</th>
-                                            <th scope="col" width="17%">Action</th>
+                                            <th scope="col" width="25%">Thana Code</th>
+                                            <th scope="col" width="25%">Thana Name</th>
+                                            <th scope="col" width="25%">District Code</th>
+                                            <th scope="col" width="25%">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>Jannat Store</td>
                                             <td> 123 </td>
-                                            <td> 623 </td>
-                                            <td> 123346534 </td>
-                                            <td> 346254123 </td>
+                                            <td> 456 </td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;">Edit</button>
                                             </td>
@@ -308,9 +249,7 @@
                                         <tr>
                                             <td>Jacob Store</td>
                                             <td> 123 </td>
-                                            <td> 623 </td>
-                                            <td> 123346534 </td>
-                                            <td> 346254123 </td>
+                                            <td> 456 </td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;">Edit</button>
                                             </td>
@@ -318,19 +257,7 @@
                                         <tr>
                                             <td>Jarry Store</td>
                                             <td> 123 </td>
-                                            <td> 623 </td>
-                                            <td> 123346534 </td>
-                                            <td> 346254123 </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;">Edit</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Larry Store</td>
-                                            <td> 123 </td>
-                                            <td> 623 </td>
-                                            <td> 123346534 </td>
-                                            <td> 346254123 </td>
+                                            <td> 456 </td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;">Edit</button>
                                             </td>
