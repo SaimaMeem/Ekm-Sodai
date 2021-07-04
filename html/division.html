@@ -193,75 +193,63 @@
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
                         <h3 class="text font-weight-bold mb-0" style="color: black;">Location Category - Division</h3>
                     </div>
-
-                    <div class="row text-dark">
-                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                            <div class="card shadow" style="margin-bottom: 2rem; color: black;">
-                                <div class="card-body">
-                                    <form action="">
-                                        <div class="form-row">
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label>Division Code</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                        <div class="row text-dark">
+                            <div class="col-lg-5 col-xl-4 col-md-12 col-sm-12">
+                                <div class="card shadow" style="margin-bottom: 2rem; color: black;">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="form-row">
                                                 <label>Division Name</label>
                                                 <input type="text" class="form-control">
+
                                             </div>
-                                            <!-- <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6">
-                                                <label>Zip Code</label>
-                                                <input type="text" class="form-control">
-                                            </div> -->
-                                        </div>
+                                    </div>
+                                    <div class="col center1 mt-1" style="display: flex; justify-content: center;">
+                                        <input class="btn btn-primary" type="submit" value="Add" name="submit" style="border-radius: 0.3rem; margin-bottom: 1rem; background-color: black;"></input>
+                                    </div>
+                                    </form>
                                 </div>
-                                <div class="col center1 mt-3" style="display: flex; justify-content: center;">
-                                    <input class="btn btn-primary" type="submit" value="Add" name="submit" style="border-radius: 0.3rem; margin-bottom: 1rem; background-color: black;"></input>
-                                </div>
-
-                                </form>
-
                             </div>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 mb-4">
-                            <div class="card shadow" style="overflow-x:auto; text-align: center; padding: 1rem;">
-                                <table class="table table-bordered table-striped table-hover" id="myTable" style="color: black;">
-                                    <thead class="thead">
-                                        <tr>
-                                            <th scope="col" width="25%">Division Code</th>
-                                            <th scope="col" width="25%">Division Name</th>
-                                            <th scope="col" width="25%">Action</th>
-                                            <th scope="col" width="25%">Next Level</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> 123 </td>
-                                            <td>Chittagong</td>
-                                            <td>
-                                                <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
-                                            </td>
-                                            <td>
-                                                <input type="submit" value="Add District" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
-                                                </input>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 456</td>
-                                            <td>Dhaka</td>
-                                            <td>
-                                                <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
-                                            </td>
-                                            <td>
-                                                <input type="submit" value="Add District" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
-                                                </input>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                            <div class="col-lg-7 col-xl-8 col-md-12 col-sm-12 mb-4">
+                                <div class="card shadow" style="overflow-x:auto; text-align: center; padding: 1rem;">
+                                    <table class="table table-bordered table-striped table-hover" id="myTable" style="color: black;">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th scope="col" width="25%">Division Code</th>
+                                                <th scope="col" width="25%">Division Name</th>
+                                                <th scope="col" width="25%">Action</th>
+                                                <th scope="col" width="25%">Next Level</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> 123 </td>
+                                                <td>Chittagong</td>
+                                                <td>
+                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                </td>
+                                                <td>
+                                                    <input type="submit" value="Add District" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
+                                                    </input>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 456</td>
+                                                <td>Dhaka</td>
+                                                <td>
+                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                </td>
+                                                <td>
+                                                    <input type="submit" value="Add District" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
+                                                    </input>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -287,13 +275,9 @@
     <script>
         $(document).ready(function() {
             var table = $('#myTable').DataTable({
-                // dom: 'Blfrtip',
-                // buttons: [
-                //     // {
-                //     //     text: '<i class="fa fa-print"></i> &nbsp; Print'
-                //     // }
-
-                // ]
+                // "scrollY": "300px",
+                // "scrollCollapse": true,
+                // "paging": false
             });
             // table.buttons().container().appendTo($('#printbar'));
 
