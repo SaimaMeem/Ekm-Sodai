@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" />
     <!-- ===== CSS ===== -->
-    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
-
+    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-- Icon link added -->
     <script src="https://kit.fontawesome.com/c598047e8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -120,7 +121,10 @@
                                 <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link" href="storeDetails.html"> <i class="fa fa-sitemap"></i>&nbsp;&nbsp;<span>Set Hierarchy</span></a>
                                 </li>
-                                <li class="nav-item" style=" list-style: none;">
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link active" href="storeAllocationDetails.html"><i
+                                            class="fa fa-list-alt"></i>&nbsp;&nbsp;<span>Hierarchy
+                                            Details</span></a> </li>
+                                <!-- <li class="nav-item" style=" list-style: none;">
                                     <a class="nav-link collapsed active" id="collapseC" data-toggle="collapse" href="#collapseList3" role="button" aria-expanded="false" aria-controls="collapseList3"><i
                                             class="fas fa-list-alt"></i>&nbsp;&nbsp;<span>Categories</span>
                                     </a>
@@ -142,7 +146,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </li>
@@ -191,9 +195,17 @@
                 <!-- diff  -->
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text font-weight-bold mb-0" style="color: black;">Location Category - Division</h3>
+                        <h3 class="text font-weight-bold mb-0" style="color: black;"> Hierarchy Details
+                        </h3>
                     </div>
                     <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                        <div class="breadcrumb flat" style="width: 100%;">
+                            <a href="#" class="active"><i
+                                    class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;<span>Division</span></a></a>
+                            <a href="#"><i class="fas fa-city"></i>&nbsp;&nbsp;<span>District</span></a></a>
+                            <a href="#"><i class="fas fa-building"></i>&nbsp;&nbsp;<span>Thana</span></a></a>
+                            <a href="#"><i class="fas fa-road"></i>&nbsp;&nbsp;<span>Zip Code</span></a></a>
+                        </div>
                         <div class="row text-dark">
                             <div class="col-lg-5 col-xl-4 col-md-12 col-sm-12">
                                 <div class="card shadow" style="margin-bottom: 2rem; color: black;">
