@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Location Category - District</title>
+    <title>Hierarchy Details</title>
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=a9a31ec932de3114d9b1ed27688edc60">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" />
     <!-- ===== CSS ===== -->
-    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
-
+    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
     <!-- Icon link added -->
     <script src="https://kit.fontawesome.com/c598047e8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -171,27 +170,45 @@
                 <!-- diff  -->
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text font-weight-bold mb-0" style="color: black;">Location Category - District</h3>
+                        <h3 class="text font-weight-bold mb-0" style="color: black;"> Hierarchy Details</h3>
                     </div>
 
                     <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                        <div class="row text-dark">
-                            <div class="col-lg-5 col-xl-4 col-md-12 col-sm-12">
-                                <div class="card shadow" style="margin-bottom: 2rem; color: black;">
-                                    <div class="card-body">
-                                        <form action="">
-                                            <div class="form-row">
+                        <div class="breadcrumb flat" style="width: 100%;">
+                            <li>
+                                <a href="#" class="" id="div"><i
+                                        class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;<span>Division</span></a>
+                            </li>
+                            <li>
+                                <a href=" # " class="active" id="dis "><i
+                                        class="fas fa-city "></i>&nbsp;&nbsp;<span>District</span></a>
+                            </li>
+                            <li style="display: none; ">
+                                <a href="# " class=" " id="th "><i
+                                        class="fas fa-building "></i>&nbsp;&nbsp;<span>Thana</span></a>
+                            </li>
+                            <li style="display: none; ">
+                                <a href="# " class=" " id="zip "><i class="fas fa-road "></i>&nbsp;&nbsp;<span>Zip
+                                        Code</span></a>
+                            </li>
+
+                        </div>
+                        <div class="row text-dark ">
+                            <div class="col-lg-5 col-xl-4 col-md-12 col-sm-12 ">
+                                <div class="card shadow " style="margin-bottom: 2rem; color: black; ">
+                                    <div class="card-body ">
+                                        <form action=" ">
+                                            <div class="form-row ">
                                                 <label>District Name</label>
-                                                <input type="text" class="form-control" style="margin-bottom: 1rem;">
+                                                <input type="text " class="form-control " style="margin-bottom: 1rem; ">
                                                 <label>Division Code</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text " class="form-control ">
 
                                             </div>
                                     </div>
                                     <div class="col center1 mt-1" style="display: flex; justify-content: center;">
                                         <input class="btn btn-primary" type="submit" value="Add" name="submit" style="border-radius: 0.3rem; margin-bottom: 1rem; background-color: black;"></input>
                                     </div>
-
                                     </form>
 
                                 </div>
@@ -199,17 +216,17 @@
                             </div>
                             <!-- </div>
 
-                        <div class="row"> -->
-                            <div class="col-lg-7 col-xl-8 col-md-12 col-sm-12 mb-4">
-                                <div class="card shadow" style="overflow-x:auto; text-align: center; padding: 1rem;">
-                                    <table class="table table-bordered table-striped table-hover" id="myTable" style="color: black;">
-                                        <thead class="thead">
+                        <div class="row "> -->
+                            <div class="col-lg-7 col-xl-8 col-md-12 col-sm-12 mb-4 ">
+                                <div class="card shadow " style="overflow-x:auto; text-align: center; padding: 1rem; ">
+                                    <table class="table table-bordered table-striped table-hover " id="myTable " style="color: black; ">
+                                        <thead class="thead ">
                                             <tr>
-                                                <th scope="col" width="15%">District Code</th>
-                                                <th scope="col" width="20%">District Name</th>
-                                                <th scope="col" width="15%">Division Code</th>
-                                                <th scope="col" width="20%">Action</th>
-                                                <th scope="col" width="30%">Next Level</th>
+                                                <th scope="col " width="15% ">District Code</th>
+                                                <th scope="col " width="20% ">District Name</th>
+                                                <th scope="col " width="15% ">Division Code</th>
+                                                <th scope="col " width="20% ">Action</th>
+                                                <th scope="col " width="30% ">Next Level</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -218,12 +235,12 @@
                                                 <td>Jamalpur</td>
                                                 <td> 456 </td>
                                                 <td>
-                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                    <input type="submit " value="Edit " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black; "></input>
                                                 </td>
                                                 <td>
-                                                    <input type="submit" value="Add Thana" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:6rem; background-color: black;">
+                                                    <input type="submit " value="Add Thana " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:6rem; background-color: black; ">
                                                     </input>
-                                                    <input type="submit" value="Add Zip Code" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;"></input>
+                                                    <input type="submit " value="Add Zip Code " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black; "></input>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -231,12 +248,12 @@
                                                 <td>Kushtia</td>
                                                 <td> 456 </td>
                                                 <td>
-                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                    <input type="submit " value="Edit " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black; "></input>
                                                 </td>
                                                 <td>
-                                                    <input type="submit" value="Add Thana" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:6rem; background-color: black;">
+                                                    <input type="submit " value="Add Thana " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:6rem; background-color: black; ">
                                                     </input>
-                                                    <input type="submit" value="Add Zip Code" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;"></input>
+                                                    <input type="submit " value="Add Zip Code " class="btn btn-primary btn-sm " onclick=" " style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black; "></input>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -248,29 +265,29 @@
 
                 </div>
             </div>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div><a class="border rounded d-inline scroll-to-top " href="#page-top "><i class="fas fa-angle-up "></i></a>
     </div>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js "></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js "></script>
+    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js " integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin=" anonymous "></script>
+    <script type="text/javascript " charset="utf8 " src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js "></script>
     <script>
         $(document).ready(function() {
             var table = $('#myTable').DataTable({
-                // "scrollY": "300px",
-                // "scrollCollapse": true,
-                // "paging": false
+                // "scrollY ": "300px ",
+                // "scrollCollapse ": true,
+                // "paging ": false
             });
             // table.buttons().container().appendTo($('#printbar'));
 
