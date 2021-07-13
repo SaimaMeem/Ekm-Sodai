@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Order Details Update</title>
+    <title>Order Details</title>
     <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=a9a31ec932de3114d9b1ed27688edc60">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -71,7 +71,7 @@
         <nav class="navbar navbar-dark align-items-start sidebar accordion p-0" id="sidebar" style="background-color: black; transition: 0.5s;">
             <div class="container-fluid d-flex flex-column p-0" style="margin-top: 0rem!important;">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/Admin.html">
-                    <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 my-3"
+                    <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 mt-2"
                                 src="/assets/img/logo.jpg" height="50" alt="Ek Mutho Sodai"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Ek Mutho <br> Sodai</span></div>
                 </a>
@@ -79,20 +79,20 @@
                 <ul class="nav navbar-nav" id="accordionSidebar" style="margin-right: 0 !important; padding-right: 0rem !important;">
                     <li class="nav-item"><a class="nav-link" href="/Products.html"><i
                                 class="fas fa-box-open"></i>&nbsp;&nbsp;<span>Products</span></a></li>
-                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
+                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important; ">
                         <a class="nav-link collapsed" id="collapseA" data-toggle="collapse" href="#collapseList1" role="button" aria-expanded="false" aria-controls="collapseList1"><i
                                 class="fas fa-store"></i>&nbsp;&nbsp;<span>Shop</span>
                         </a>
                         <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
                             <ul class="nav navbar-nav" style=" padding: 0rem!important;">
                                 <li class="nav-item" style=" list-style: none;">
-                                    <a class="nav-link" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
+                                    <a class="nav-link link2" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
                                 </li>
-                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link link2" href="storeAllocationDetails.html"><i
                                             class="fas fa-credit-card"></i>&nbsp;&nbsp;<span>
                                             Payment
                                         </span></a> </li>
-                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                <li class="nav-item link2" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
                                             class="fas fa-box-open"></i>&nbsp;&nbsp;<span>Product Insertion
                                         </span></a> </li>
                             </ul>
@@ -159,90 +159,141 @@
 
                 <!-- diff  -->
                 <div class="container-fluid responsive">
-                    <h3 class="responsive font-weight-bold mb-1 pl-0" style="color: rgb(0, 0, 0) !important;">Order Details Update
+                    <h3 class="responsive font-weight-bold mb-1 pl-0" style="color: rgb(0, 0, 0) !important;">Order Details
                     </h3>
                     <!-- <div class="d-sm-flex justify-content-between align-items-center mb-4 mt-4">
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4" style="padding-left: 0rem;">
-                            <span class="fa fa-search "
-                                style="position: absolute; z-index: 2; display: block; width: 2.375rem; height: 2rem; line-height: 2rem; text-align: center; pointer-events: none; color:#65676b; "></span>
-                            <input id="myInput" type="text " class="form-control " placeholder="Search "
-                                style="padding-left: 2.375rem; width: auto; height: 2rem; ">
-                        </div>
-                        <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8 "
-                            style="text-align: right; padding-right: 0rem; margin-top: 0rem;">
-                            <a class="btn btn-danger btn btn-sm " role="button " href="\storeAllocation.html"><i
-                                    class="fas fa-cart-plus"></i>&nbsp;Allocate Stores</a>
+                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 mr-0 pr-0" style="text-align: right;  margin: 0 auto">
+                            <a class="btn btn-primary btn btn-sm " role="button " href="\storeAllocation.html" style="background-color: black;"><i class="fas fa-cart-plus"></i>&nbsp;Allocate
+                                Stores</a>
                         </div>
                     </div> -->
-                    <div class="row mt-4">
-                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12" style="color: black;">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <form action="" id="storeForm" method="post">
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Shop Name</label>
-                                                <input type="text" id="SName" class="form-control" required>
-                                            </div>
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Product Name</label>
-                                                <input type="text" id="PName" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Quantity</label>
-                                                <input type="text" id="Quantity" class="form-control" required>
-                                            </div>
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Rate</label>
-                                                <input type="text" id="Rate" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Order Date</label>
-                                                <input type="text" id="ODate" class="form-control" required>
-                                            </div>
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Delivery Date</label>
-                                                <input type="text" id="DDate" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-row my-3">
-                                            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
-                                                <label for="">Status</label>
-                                                <input type="text" id="Status" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="col center1 mt-3" style="display: flex; justify-content: center;">
-                                            <button class="btn btn-primary" type="button" name="submit" style="border-radius: 0.2rem; background-color: black;">Add</button>
-                                        </div>
-                                    </form>
-
+                    <div class="card shadow my-4" style="color: black;">
+                        <div class="card-header text-center" id="prosidenav">
+                            <div class="row ">
+                                <div class="col ">
+                                    <b> Search Shop Location</b>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form action=" " id="storeForm " method="post ">
+                                <div class="form-row my-3 ">
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">National</label>
+                                        <input type="text " id="National " class="form-control " required>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">Area</label>
+                                        <input type="text " id="Area " class="form-control " required>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">Territory</label>
+                                        <input type="text " id="Territory " class="form-control " required>
+                                    </div>
+                                </div>
+                                <div class="form-row my-3 ">
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">Dealer</label>
+                                        <input type="text " id="Dealer " class="form-control " required>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">Beat</label>
+                                        <input type="text " id="Beat " class="form-control " required>
+                                    </div>
+                                    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4 ">
+                                        <label for=" ">Market</label>
+                                        <input type="text " id="Market " class="form-control " required>
+                                    </div>
+                                </div>
+                                <div class="center " style="margin: 0 auto !important; text-align: center; ">
+                                    <input class="btn btn-primary " type="submit" value="Search" onclick=" " style="border-radius: 0.3rem; background-color: black;"></input>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                            <div class="card shadow text-center p-3" id="storeTable" style="overflow-x: auto !important;">
+                                <h5 style="color: black; font-weight: bold; text-align: right;">Lot No. <input type="text" disabled value="1" style="display: inline; width: 3rem; text-align: center;"></h5>
+                                <table class="table cell-border table-bordered table-striped mt-3" id="myTable" style="color: black;">
+                                    <thead class="">
+                                        <tr class="">
+                                            <th scope="col" width="20%">Shop Name</th>
+                                            <th scope="col" width="20%">Order Date</th>
+                                            <th scope="col" width="20%">Delivery Date</th>
+                                            <th scope="col" width="20%">Status</th>
+                                            <th scope="col" width="20%">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td>Abdullah Brothers</td>
+                                            <!-- <td>Basmati Rice</td>
+                                            <td>20Kg</td>
+                                            <td>100/-</td> -->
+                                            <td>10/07/21</td>
+                                            <td>15/07/21</td>
+                                            <td>Pending</td>
+                                            <td>
+                                                <a type="button" class="btn btn-dark btn-sm" onclick="" href="storeDetails.html" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">View</a>
+                                                <a type="button" class="btn btn-dark btn-sm" onclick="" href="storeDetails.html" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">Edit</a>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>Minhaz Brothers</td>
+                                            <td>10/07/21</td>
+                                            <td>15/07/21</td>
+                                            <td>Pending</td>
+                                            <td>
+                                                <a type="button" class="btn btn-dark btn-sm" onclick="" href="storeDetails.html" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">View</a>
+                                                <a type="button" class="btn btn-dark btn-sm" onclick="" href="storeDetails.html" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem;  background-color: black !important;">Edit</a>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- <div id="printbar"></div> -->
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><a class="border rounded d-inline scroll-to-top " href="#page-top "><i class="fas fa-angle-up "></i></a>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js "></script>
+    <script src="assets/js/main.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js "></script>
-    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js " integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin=" anonymous "></script>
-    <script type="text/javascript " charset="utf8 " src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#myTable').DataTable({
+                // dom: 'Blfrtip',
+                // buttons: [
+                //     // {
+                //     //     text: '<i class="fa fa-print"></i> &nbsp; Print'
+                //     // }
+
+                // ]
+            });
+            // table.buttons().container().appendTo($('#printbar'));
+
+        });
+    </script>
 </body>
 
 </html>
