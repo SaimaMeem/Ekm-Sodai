@@ -98,7 +98,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="/Admin.html"><i
+                    <li class="nav-item"><a class="nav-link" href="/Admin.html"><i
                                 class="far fa-list-alt"></i>&nbsp;&nbsp;<span>Order</span></a></li>
                     <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
                         <a class="nav-link collapsed" id="collapseB" data-toggle="collapse" href="#collapseList2" role="button" aria-expanded="false" aria-controls="collapseList2"><i
@@ -115,7 +115,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
+                    <li class="nav-item"><a class="nav-link active" href="/Employee_show.html"><i
                                 class="fas fa-truck"></i>&nbsp;&nbsp;<span>Delivery</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
                                 class="fas fa-tags"></i>&nbsp;&nbsp;<span>Discount</span></a></li>
@@ -161,14 +161,8 @@
                 <div class="container-fluid responsive">
                     <h3 class="responsive font-weight-bold mb-1 pl-0" style="color: rgb(0, 0, 0) !important;">Delivery Details
                     </h3>
-                    <!-- <div class="d-sm-flex justify-content-between align-items-center mb-4 mt-4">
-                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 mr-0 pr-0" style="text-align: right;  margin: 0 auto">
-                            <a class="btn btn-primary btn btn-sm " role="button " href="\storeAllocation.html" style="background-color: black;"><i class="fas fa-cart-plus"></i>&nbsp;Allocate
-                                Stores</a>
-                        </div>
-                    </div> -->
                     <div class="row">
-                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
+                        <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12">
                             <div class="card shadow my-2" style="color: black;">
                                 <div class="card-header text-center" id="prosidenav">
                                     <div class="row ">
@@ -225,23 +219,31 @@
                         </div>
 
 
-                        <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 my-2">
-                            <form class="mb-3 mt-2" style="display: flex; flex-direction: row; justify-content: center;">
-                                <label for="dateSearch" style="margin-top: 0.5rem; color: black; margin-right: 1rem;"><b>Date:</b></label>
-                                <input type="date" class="form-control" id="dateSearch" style="width: 45%;">
-                                <input class="btn btn-primary " type="submit" value="Search" onclick=" " style="border-radius: 0.3rem; background-color: black;margin: auto 1rem;"></input>
-                                <!-- <label for="SR" style="margin-top: 0.5rem; color: black;"><b>Date
-                                        Number:</b></label>
-                                <select name="DB_POINT_ID" class="form-control ml-4" id="location" placeholder="Set Location" style="width: 45%;">
-                                    <option value='0'>Select Lot No.</option>
-                                    <option th:each="p : ${showList_van_location}"
-                                        th:selected="(${p.DB_POINT_ID} == *{DB_POINT_ID})" th:value="${p.DB_POINT_ID}"
-                                        th:text="${p. DB_POINT_DESCR}" />
-                                </select>
-                                <input class="btn btn-primary " type="submit" value="Search" onclick=" " style="border-radius: 0.3rem; background-color: black;margin: auto 1rem;"></input> -->
-                            </form>
+                        <div class="col-lg-9 col-xl-9 col-md-12 col-sm-12 my-2">
+                            <div class="container p-0">
+                                <div class="responsive row">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-3 pr-0">
+                                        <form class="" style="display: flex; flex-direction: row;">
+                                            <label for="dateSearch" style="color: black; margin-top: 0.55rem; padding-left: 0rem;"><b>Date:</b></label>
+
+                                            <input type="date" class="form-control ml-2" id="dateSearch" style="width: 100%;">
+                                            <input class="btn btn-primary" type="submit" value="Search" onclick=" " style="border-radius: 0.3rem; background-color: black; margin: auto 0.7rem;"></input>
+                                        </form>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-3 pr-0">
+                                        <form class="" style="display: flex; flex-direction: row;">
+                                            <label for="dateSearch" style="color: black; margin-top: 0.55rem; padding-left: 0rem;"><b>Lot:</b></label>
+
+                                            <select name="" class="form-control ml-2" id="lotno" placeholder="Select Lot No." style="width: 100%;">
+                                                <option value='0'>Select Lot No.</option>
+                                            </select>
+                                            <input class="btn btn-primary" type="submit" value="Search" onclick=" " style="border-radius: 0.3rem; background-color: black; margin: auto 0.7rem; padding: auto 1rem;"></input>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card shadow text-center p-3" id="storeTable" style="overflow-x: auto !important;">
-                                <!-- <h5 style="color: black; font-weight: bold; text-align: right;">Lot No. <input type="text" disabled value="1" style="display: inline; width: 3rem; text-align: center;"></h5> -->
+                                <h5 style="color: black; font-weight: bold; text-align: right;">Lot No. <input type="text" disabled value="1" style="display: inline; width: 3rem; text-align: center;"></h5>
                                 <table class="table cell-border table-bordered table-striped mt-3" id="myTable" style="color: black;">
                                     <thead class="">
                                         <tr class="">
