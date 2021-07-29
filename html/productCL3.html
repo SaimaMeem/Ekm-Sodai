@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Product Categories</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/logo.jpg">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=a9a31ec932de3114d9b1ed27688edc60">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Icon link added -->
+    <script src="https://kit.fontawesome.com/c598047e8f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @media screen and (min-width: 572px) {
+            #collapseC:after {
+                right: 37px !important;
+            }
+            .sidebar.toggled .nav-item .nav-link#collapseC:after {
+                top: 40% !important;
+                right: 20px !important;
+            }
+        }
+        
+        .sidebar .nav-item .nav-link[data-toggle=collapse]:after {
+            width: 1rem;
+            text-align: center;
+            float: right;
+            vertical-align: 0;
+            border: 0;
+            font-weight: 900;
+            content: "\f107";
+            font-family: Font Awesome\ 5 Free;
+        }
+        
+        #collapseA:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        
+        #collapseC:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        /*         
+        #accordionSidebar {
+            padding-right: 0 !important;
+            margin-right: 0 !important;
+        }
+         */
+        
+        #accordionSidebar a:hover {
+            color: #ED2124 !important;
+        }
+        
+        #accordionSidebar a {
+            color: #ffffffcc !important;
+        }
+        
+        #accordionSidebar a.active {
+            /* background-color: #ccc; */
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar p-0" id="sidebar" style="background-color: black; transition: 0.5s;">
+            <div class="container-fluid d-flex flex-column p-0" style="margin-top: 0rem!important;">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/Admin.html">
+                    <div class="sidebar-brand-icon"><i class=""><img class="border rounded-0 mt-2"
+                                src="/assets/img/logo.jpg" height="50" alt="Ek Mutho Sodai"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Ek Mutho <br> Sodai</span></div>
+                </a>
+                <hr class="sidebar-divider my-2">
+                <ul class="nav navbar-nav" id="accordionSidebar" style="margin-right: 0 !important; padding-right: 0rem !important;">
+                    <li class="nav-item"><a class="nav-link" href="/Products.html"><i class="fas fa-box-open"></i>&nbsp;
+                            &nbsp;<span>Products</span></a></li>
+                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
+                        <a class="nav-link collapsed" id="collapseA" data-toggle="collapse" href="#collapseList1" role="button" aria-expanded="false" aria-controls="collapseList1"><i
+                                class="fas fa-store"></i>&nbsp;&nbsp;<span>Shop</span>
+                        </a>
+                        <div class="collapse" id="collapseList1" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial;  transition: 0.5s;">
+                            <ul class="nav navbar-nav" style=" padding: 0rem!important;">
+                                <li class="nav-item" style=" list-style: none;">
+                                    <a class="nav-link" href="storeDetails.html"> <i class="fas fa-cart-plus"></i>&nbsp;&nbsp;<span>Entry</span></a>
+                                </li>
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                            class="fas fa-credit-card"></i>&nbsp;&nbsp;<span>
+                                            Payment
+                                        </span></a> </li>
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                            class="fas fa-box-open"></i>&nbsp;&nbsp;<span>Product Insertion
+                                        </span></a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Admin.html"><i
+                                class="far fa-list-alt"></i>&nbsp;&nbsp;<span>Order</span></a></li>
+                    <li class="nav-item" style="padding-right: 0rem!important; margin-right: 0rem!important;">
+                        <a class="nav-link collapsed active" id="collapseA" data-toggle="collapse" href="#collapseList2" role="button" aria-expanded="false" aria-controls="collapseList2"><i
+                                class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;<span>Location</span>
+                        </a>
+                        <div class="collapse" id="collapseList2" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
+                            <ul class="nav navbar-nav" style=" padding: 0rem!important;">
+                                <li class="nav-item" style=" list-style: none;">
+                                    <a class="nav-link" href="storeDetails.html"> <i class="fa fa-sitemap"></i>&nbsp;&nbsp;<span>Set Hierarchy</span></a>
+                                </li>
+                                <li class="nav-item" style=" list-style: none;"><a class="nav-link active" href="storeAllocationDetails.html"><i
+                                            class="fa fa-list-alt"></i>&nbsp;&nbsp;<span>Hierarchy
+                                            Details</span></a> </li>
+                                <!-- <li class="nav-item" style=" list-style: none;">
+                                    <a class="nav-link collapsed active" id="collapseC" data-toggle="collapse" href="#collapseList3" role="button" aria-expanded="false" aria-controls="collapseList3"><i
+                                            class="fas fa-list-alt"></i>&nbsp;&nbsp;<span>Categories</span>
+                                    </a>
+                                    <div class="collapse" id="collapseList3" style="padding-right: 0rem!important; margin-right: 0rem!important;  position: initial; transition: 0.5s;">
+                                        <ul class="nav navbar-nav" style=" padding: 0rem!important;">
+                                            <li class="nav-item" style=" list-style: none;">
+                                                <a class="nav-link active" href="storeDetails.html"> <i class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;<span>Division</span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                                        class="fas fa-city"></i>&nbsp;&nbsp;<span>District
+                                                    </span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;">
+                                                <a class="nav-link" href="storeDetails.html"> <i class="fas fa-building"></i>&nbsp;&nbsp;<span>Thana</span></a>
+                                            </li>
+                                            <li class="nav-item" style=" list-style: none;"><a class="nav-link" href="storeAllocationDetails.html"><i
+                                                        class="fas fa-road"></i>&nbsp;&nbsp;<span>Zip Code
+                                                    </span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
+                                class="fas fa-truck"></i>&nbsp;&nbsp;<span>Delivery</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
+                                class="fas fa-tags"></i>&nbsp;&nbsp;<span>Discount</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Location.html">
+                            <i class="fas fa-globe">
+                            </i>&nbsp;&nbsp;<span>Site</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Employee_show.html"><i
+                                class="fas fa-user"></i>&nbsp;&nbsp;<span>User</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                        <button class="btn btn-link rounded-circle mr-3" data-bs-hover-animate="swing" id="sidebarToggleTop" type="button"><i class="fas fa-bars"
+                                style="color: black;"></i></button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span
+                                            class="d-none d-lg-inline mr-2 text-gray-900 font-weight-normal small">Mr.
+                                            Bob
+                                            Max</span><img class="border rounded-circle img-profile"
+                                            src="/assets/img/avatars/avatar4.jpeg"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in">
+                                        <!-- <a class="dropdown-item" href="#"><i
+                                                class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a>
+                                        <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-black-bold"></i>&nbsp;Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- diff  -->
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text font-weight-bold mb-0" style="color: black;"> Product Categories
+                        </h3>
+                    </div>
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                        <div class="breadcrumb flat" style="width: 100%;">
+                            <li>
+                                <a href="#" class="" id="l1"><span>Level 01</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="" id="l2"><span>Level 02</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="active" id="l3"><span>Level 03</span></a>
+                            </li>
+                            <li style="display: none;">
+                                <a href="#" class="" id="l4"><span>Level
+                                        04</span></a>
+                            </li>
+
+                        </div>
+                        <div class="row text-dark">
+                            <div class="col-lg-5 col-xl-4 col-md-12 col-sm-12">
+                                <div class="card shadow" style="margin-bottom: 2rem; color: black;">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="form-row">
+                                                <label>Product Name</label>
+                                                <input type="text" class="form-control">
+
+                                            </div>
+                                    </div>
+                                    <div class="col center1 mt-1" style="display: flex; justify-content: center;">
+                                        <input class="btn btn-primary" type="submit" value="Add" name="submit" style="border-radius: 0.3rem; margin-bottom: 1rem; background-color: black;"></input>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                            <div class="col-lg-7 col-xl-8 col-md-12 col-sm-12 mb-4">
+                                <div class="card shadow" style="overflow-x:auto; text-align: center; padding: 1rem;">
+                                    <table class="table table-bordered table-striped table-hover" id="myTable" style="color: black;">
+                                        <thead class="thead">
+                                            <tr>
+                                                <th scope="col" width="25%">Category</th>
+                                                <th scope="col" width="25%">Product Name</th>
+                                                <th scope="col" width="25%">Action</th>
+                                                <th scope="col" width="25%">Next Level</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Level 03 </td>
+                                                <td>Banashpoti</td>
+                                                <td>
+                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                </td>
+                                                <td>
+                                                    <input type="submit" value="Add Level 04" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
+                                                    </input>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> Level 03</td>
+                                                <td>Katary Vog</td>
+                                                <td>
+                                                    <input type="submit" value="Edit" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:4rem; background-color: black;"></input>
+                                                </td>
+                                                <td>
+                                                    <input type="submit" value="Add Level 04" class="btn btn-primary btn-sm" onclick="" style="display:inline-block;margin:0 0.3em 0.3em 0;width:7rem; background-color: black;">
+                                                    </input>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/script.min.js?h=af3a23ce326fbc8eb447b5418ddb619e"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#myTable').DataTable({
+                // "scrollY": "300px",
+                // "scrollCollapse": true,
+                // "paging": false
+            });
+            // table.buttons().container().appendTo($('#printbar'));
+
+        });
+    </script>
+</body>
+
+</html>
